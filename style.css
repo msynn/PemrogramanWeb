@@ -51,7 +51,7 @@ nav ul li {
 nav ul li:nth-child(1) a:hover{
     color:#ffffff;
     background-color: #ff8800;
-    border-radius: 10px 0 0 10px;
+    border-radius: 10px;
 }
 nav ul li:nth-child(2) a:hover{
     color:#ffffff;
@@ -66,7 +66,7 @@ nav ul li:nth-child(3) a:hover{
 nav ul li:nth-child(4) a:hover{
     color:#ffffff;
     background-color: #ff8800;
-    border-radius: 0 10px 10px 0;
+    border-radius:10px;
 }
 
 /* li:nth-child(1){
@@ -330,9 +330,9 @@ section h3 {
 footer .contact {
     /* position: absolute; */
     width: 100%;
-    height: 115px;
+    height: 20vh;
     left: 0px;
-    z-index: -1;
+    z-index: 0;
     background: linear-gradient(180deg, #ff8800 0%, #FFAE12 100%);
     box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
@@ -341,10 +341,11 @@ footer .contact .container {
     position: absolute;
     width: 131px;
     height: 131px;
-    left: 142px;
+    left: 2vw;
     bottom: 80px;
     background: #FFFFFF;
     border-radius: 15px;
+    z-index: 0;
 }
 footer .contact .container img {
     margin: 10px;
@@ -355,7 +356,7 @@ footer .contact h5 {
     position: absolute;
     width: 200px;
     height: 22px;
-    left: 145px;
+    left: 18vh;
     bottom: 100px;
     font-family: 'Forum';
     font-style: normal;
@@ -369,41 +370,38 @@ footer .contact h5 {
 
 footer .contact table {
     position: absolute;
-    width: 240px;
-    height: 22px;
-    left: 145px;
+    width: 300px;
+    /* height: 10vw; */
+    left: 18vh;
     bottom: 50px;
     font-family: 'Forum';
     font-style:normal;
-    font-weight: 400;
     font-size: 15px;
     line-height: 17px;
     text-align: left;
-    color: #FFFFFF;
+    color: #ffffff;
 }
 footer .contact table tr td a {
     text-decoration: none;
     color: white;
-}
-footer .contact table tr td {
-    width: 50px;
 }
 
 footer .contact .container .medsos {
     position: relative;
     text-decoration: none;
     bottom: 50px;
-    left: 130px;
-    padding: 5px;
+    left: 16vh;
+    padding: 0;
 }
 
 
 footer .container {
-    height: 40px;
+    height: 25px;
     width: 100%;
     background-color: #ff8800;
     color: white;
     text-align: center;
+
 }
 
 
