@@ -131,6 +131,7 @@ section {
     flex-direction: column;
 }
 
+
 section h3 {
     text-align: center;
     padding: 20px 0;
@@ -142,7 +143,7 @@ section h3 {
     color: rgb(124, 124, 124);
     word-spacing: 2px;
     text-align: justify;
-    margin: 0 350px;
+    margin: 0 10px 0 10px;
 }
 
 .about {
@@ -153,7 +154,7 @@ section h3 {
 
 /* service */
 .service {
-    background-color: #f9f9f9;
+    background-color: #ffffff;
     padding-bottom: 100px;
 }
 .contact {
@@ -200,6 +201,7 @@ section h3 {
     margin: 0 auto;
 }
 
+
 .box .col-4 h4 {
     margin: 20px 0;
     text-align: center;
@@ -245,11 +247,11 @@ section h3 {
 
 
 /* responsive Breakpoint */
-@media screen and (max-width: 768px) {
+/* @media screen and (max-width: 768px) {
     nav ul {
         width: 50%;
     }
-}
+} */
 
 
 /* Ukuran Mobile */
@@ -287,8 +289,8 @@ section h3 {
 }
 
 .banner img {
-    width: auto;
-    height: auto;
+    width: 100%;
+    height: 100%;
 }
 
 /* .banner:after {
@@ -326,82 +328,100 @@ section h3 {
     opacity: 0;
 }
 
-/* footer */
-footer .contact {
-    /* position: absolute; */
+/* contact */
+.containercontact {
+    /* border: 1px solid; */
     width: 100%;
-    height: 20vh;
-    left: 0px;
-    z-index: 0;
+    height: 300px;
+    margin: 10px;
+}
+
+.contact {
+    /* position: relative; */
+    position: absolute;
+    width: 100%;
+    height: 200px;
+    z-index: -1;
     background: linear-gradient(180deg, #ff8800 0%, #FFAE12 100%);
     box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-footer .contact .container {
+.kotak {
     position: absolute;
     width: 131px;
     height: 131px;
-    left: 2vw;
-    bottom: 80px;
+    top: 50%;
+    left: 20%;
+    transform:translate(-50%,-50%);
     background: #FFFFFF;
     border-radius: 15px;
-    z-index: 0;
-}
-footer .contact .container img {
-    margin: 10px;
-    border-radius: 15px;
+    display: flex;
 }
 
-footer .contact h5 {
-    position: absolute;
-    width: 200px;
-    height: 22px;
-    left: 18vh;
-    bottom: 100px;
+.kotak ul {
+    margin: 10px;
+}
+
+.kotak img {
+    margin: 10px;
+}
+
+.kotak ul li a {
+    text-decoration: none;
+    font-family: 'Forum';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 17px;
+    color: #FFFFFF;
+    
+}
+
+.kotak ul li h4{
     font-family: 'Forum';
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
     line-height: 22px;
-    text-align: left;
-/* identical to box height */
     color: #FFFFFF;
+    margin-bottom: 10px;
 }
 
-footer .contact table {
-    position: absolute;
-    width: 300px;
-    /* height: 10vw; */
-    left: 18vh;
-    bottom: 50px;
+.kotak ul li h5 {
     font-family: 'Forum';
-    font-style:normal;
+    font-style: normal;
+    font-weight: 400;
     font-size: 15px;
     line-height: 17px;
-    text-align: left;
-    color: #ffffff;
-}
-footer .contact table tr td a {
-    text-decoration: none;
-    color: white;
+    color: #FFFFFF;
+    width: 250px;
 }
 
-footer .contact .container .medsos {
-    position: relative;
-    text-decoration: none;
-    bottom: 50px;
-    left: 16vh;
-    padding: 0;
+.kotak ul li ul {
+    display: flex;
 }
 
+/* kotak2 */
+/* .kotak2 {
+    border: 1px solid;
+    width: 50%;
+    height: 200px;
+    margin-left: 50%;
+    background-color: #565757;
+} */
 
+/* footer */
 footer .container {
+    position: relative;
+    top: 300px;
+    margin: 0;
     height: 25px;
     width: 100%;
     background-color: #ff8800;
     color: white;
     text-align: center;
-
+    bottom: 0;
+    z-index: -1;
 }
 
 
