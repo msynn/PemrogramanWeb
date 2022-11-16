@@ -431,18 +431,18 @@ section h3 {
         display: flex;
     }
     nav .menu li a{
-        color: #FFAE12;
+        color: #ff8800;
     }
     nav ul {
         position: absolute;
         right: 0;
         top: 0;
-        width: 100%;
+        width: 60%;
         height: 100vh;
         flex-direction: column;
         justify-content: space-evenly;
         align-items: center;
-        background-color:#ffffff;
+        background-color:#888888;
         z-index: 0;
         transform: translateX(100%);
         transition: 0.3s;
@@ -451,10 +451,13 @@ section h3 {
     nav ul.slide {
         transform: translateX(0);
         opacity: 1;
+        border-radius: 0;
+        border: 0;
+        background-color: #ffffff;
     }
     
     nav ul li a:hover {
-        color:#555555;
+        color:#5a5a5a;
     }
 
 }
@@ -744,17 +747,25 @@ footer .container {
 .menu .belanja {
     /* border: 1px solid; */
     width: 92%;
-    border-radius: 0px;
     margin: auto;
-    height: 50vw;
+    height: 58vw;
     text-align: center;
-    border-radius: 0 0 100px 0;
+    border-radius: 10px 10px 60px 0;
     margin-bottom: 50px;
     margin-top: 0px;
 }
 
+.belanja .top {
+    width: 92%;
+    height: auto;
+    background-color: #ff8800;
+    margin: 10px auto;
+    border-radius: 10px;
+}
+
+
 .belanja h4 {
-    color: #ff8800;
+    color: #ffffff;
     font-size: 2vw;
     margin: auto;
     padding: 2vw;
@@ -771,10 +782,14 @@ footer .container {
 .mid .box {
     /* border: 1px solid; */
     width: 30%;
-    height: 40vw;
+    height: 42vw;
     margin: auto;
     border-radius: 0px 0px 50px 0px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.kotak-gambar a {
+    text-decoration: none;
+    color: #ff8800;
 }
 
 .box .kotak-gambar {
