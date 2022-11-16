@@ -7,7 +7,7 @@ body {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     overflow-x: hidden;
     position: relative;
-    background: #FFFFFF;
+    background: linear-gradient(180deg, #ff8800 10%, #ff8800 100%);
 }
 
 /* navbar */
@@ -19,7 +19,7 @@ nav {
     height: 70px;
     color:#FFAE12;
     align-items: center;
-    box-shadow: 0 2px 3px 0 rgba(0,0,0,.1);
+    box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.1);
     position: fixed;
     width: 100%;
 }
@@ -124,13 +124,33 @@ nav .logo img {
 } */
 
 
-
+/* beranda */
 section {
-    padding: 5px 0;
+    padding: 0;
     display: flex;
     flex-direction: column;
+    background-color:#FFC353;
+    border-radius: 20px 20px 0 0;
 }
 
+.siger h3 {
+    text-align: center;
+    color: #ffffff;
+    background-color: #FFC353;
+    margin-left: auto;
+    margin-right: auto;
+    width: 25%;
+    border-radius: 10px 10px 0 0;
+}
+
+.siger img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 14%;
+    width: 21%;
+    margin-top: 10%;
+}
 
 section h3 {
     text-align: center;
@@ -139,18 +159,93 @@ section h3 {
     margin-bottom: 20px;
 }
 
-.about p {
-    color: rgb(124, 124, 124);
-    word-spacing: 2px;
+.beranda h4 {
+    font-size:1em;
+    color: rgb(100, 100, 100);
+    word-spacing: 5px;
     text-align: justify;
-    margin: 0 10px 0 10px;
+    margin: 5%;
 }
 
-.about {
-    padding-bottom: 100px;
-    align-items: center;
-    text-align: center;
+
+
+.beranda {
+    /* padding-bottom: 100px; */
+    margin: auto;
+    width: 92%; 
+    height: auto;
 }
+
+.beranda .container {
+    margin: 30px auto;
+    background-color: #FFFFFF;
+    /* background-image: url(img/lampung.jpg) ; */
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    width: 80%;
+    height: 80%;
+    opacity: 1;
+    bottom: 100px;
+}
+
+.content {
+    margin-top: 0;
+    width: 100%;
+    height: 50vw;
+}
+.slider {
+    background-color: #000000;
+    margin: auto;
+    width: 92%;
+    height: 90%;
+    position: relative;
+    z-index: -1;
+}
+
+.slide1,.slide2,.slide3 {
+    position: absolute;
+    width: 100%;
+    margin: auto;
+    height: 100%;
+}
+
+.slide1 {
+    background: url(img/pisang1.jpg) no-repeat center;
+    background-size: cover;
+    animation: fade 8s infinite;
+    -webkit-animation: fade 8s infinite;
+}
+.slide2 {
+    background: url(img/pisang2.jpg) no-repeat center;
+    background-size: cover;
+    animation: fade 8s infinite;
+    -webkit-animation: fade2 8s infinite;
+}
+.slide3 {
+    background: url(img/pisang3.jpg) no-repeat center;
+    background-size: cover;
+    animation: fade 8s infinite;
+    -webkit-animation: fade3 8s infinite;
+}
+@keyframes fade {
+    0%{opacity: 1;}
+    33.333%{opacity: 0;}
+    66.666%{opacity: 0;}
+    100%{opacity: 1;}
+}
+@keyframes fade2 {
+    0%{opacity: 0;}
+    33.333%{opacity: 1;}
+    66.666%{opacity: 0;}
+    100%{opacity: 0;}
+}
+@keyframes fade3 {
+    0%{opacity: 0;}
+    33.333%{opacity: 0;}
+    66.666%{opacity: 1;}
+    100%{opacity: 0;}
+}
+
 
 /* service */
 .service {
