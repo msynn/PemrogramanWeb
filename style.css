@@ -26,22 +26,25 @@ nav {
 }
 
 nav ul {
+    border: 3px solid;
+    border-color: #FFAE12;
     display: flex;
     list-style: none;
     width: 590px;
     justify-content: space-between;
-    background:#FFAE12;
+    background:#fdfdfd;
     height: 50px;
     font-size: 0;
     box-shadow: 0 2px 3px 0 rgba(0,0,0,.1);
     align-items: center;
-    border-radius: 8px;
+    border-radius: 10px;
 }
+
 
 nav ul li {
     font-size: 15px;
     text-transform: uppercase;
-    color: #ffffff;
+    color: #FFAE12;
     text-decoration: none;
     position: relative;
     z-index: 1;
@@ -52,22 +55,22 @@ nav ul li {
 nav ul li:nth-child(1) a:hover{
     color:#ffffff;
     background-color: #ff8800;
-    border-radius: 10px;
+    border-radius: 5px;
 }
 nav ul li:nth-child(2) a:hover{
     color:#ffffff;
     background-color: #ff8800;
-    border-radius: 0;
+    border-radius: 5px;
 }
 nav ul li:nth-child(3) a:hover{
     color:#ffffff;
     background-color: #ff8800;
-    border-radius: 0;
+    border-radius: 5px;
 }
 nav ul li:nth-child(4) a:hover{
     color:#ffffff;
     background-color: #ff8800;
-    border-radius:10px;
+    border-radius:5px;
 }
 
 /* li:nth-child(1){
@@ -84,7 +87,7 @@ li:nth-child(4){
 } */
 
 nav .menu li a{
-    color:#ffffff;
+    color:#FFAE12;
     text-decoration: none;
     font-size: 1em; 
     padding: 15px 42px;
@@ -130,18 +133,20 @@ section {
     padding: 0;
     display: flex;
     flex-direction: column;
-    background-color:#FFC353;
+    background-color:#FFFFFF;
     border-radius: 20px 20px 0 0;
 }
 
 .siger h3 {
+    font-size: 2vw;
     text-align: center;
-    color: #ffffff;
-    background-color: #FFC353;
+    color: #ff8800;
+    background-color: #FFFFFF;
     margin-left: auto;
     margin-right: auto;
     width: 25%;
     border-radius: 10px 10px 0 0;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
 .siger img {
@@ -161,7 +166,7 @@ section h3 {
 }
 
 .beranda h4 {
-    font-size:1em;
+    font-size: 2vw;
     color: rgb(100, 100, 100);
     word-spacing: 5px;
     text-align: justify;
@@ -213,8 +218,8 @@ section h3 {
     height: 40vw;
     /* background: url(img/pissang\ shamiya.jpg);
     background-size: cover; */
-    background-color: #FFC353;
-    border-radius: 0 0 0 200px;
+    background-color: #FFFFFF;
+    border-radius: 0 0 0 20px;
     margin-bottom: 150px;
 }
 
@@ -226,8 +231,8 @@ section h3 {
     height: 40vw;
     /* background: url(img/pissang\ shamiya.jpg);
     background-size: cover; */
-    background-color: #FFC353;
-    border-radius: 0 0 200px 0;
+    background-color: #FFFFFF;
+    border-radius: 0 0 20px 0;
     margin-bottom: 150px;
 }
 
@@ -250,32 +255,32 @@ section h3 {
 .slide1 {
     background: url(img/shamiya1.jpeg) no-repeat center;
     background-size: cover;
-    animation: fade 14s infinite;
-    -webkit-animation: fade 14s infinite;
+    animation: fade 40s infinite;
+    -webkit-animation: fade 40s infinite;
 }
 .slide2 {
     background: url(img/shamiya2.jpeg) no-repeat center;
     background-size: cover;
-    animation: fade 14s infinite;
-    -webkit-animation: fade2 14s infinite; 
+    animation: fade 40s infinite;
+    -webkit-animation: fade2 40s infinite; 
 }
 .slide3 {
     background: url(img/shamiya3.jpeg) no-repeat center;
     background-size: cover;
-    animation: fade 14s infinite;
-    -webkit-animation: fade3 14s infinite;
+    animation: fade 40s infinite;
+    -webkit-animation: fade3 40s infinite;
 }
 .slide4 {
     background: url(img/shamiya4.jpeg) no-repeat center;
     background-size: cover;
-    animation: fade 14s infinite;
-    -webkit-animation: fade4 14s infinite;
+    animation: fade 40s infinite;
+    -webkit-animation: fade4 40s infinite;
 }
 .slide5 {
     background: url(img/shamiya5.jpeg) no-repeat center;
     background-size: cover;
-    animation: fade 14s infinite;
-    -webkit-animation: fade5 14s infinite;
+    animation: fade 40s infinite;
+    -webkit-animation: fade5 40s infinite;
 }
 @keyframes fade {
     0%{opacity: 1;}
@@ -316,7 +321,7 @@ section h3 {
     60%{opacity: 0;}
     80%{opacity: 1;}
     100%{opacity: 0;}
-}
+} 
 
 /* service */
 .service {
@@ -477,8 +482,8 @@ section h3 {
 .banner .gambar h5 {
     text-align: center;
     margin-top: 50%;
-    font-size: 15px;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1vw;
+    
 }
 
 .gambar a {
@@ -660,17 +665,18 @@ footer .container {
 
 /* Profile */
 .text-profile {
+    font-size: 2vw;
     padding-top: 10vw;
-    color: #FFFFFF;
+    color: #ff8800;
     text-align: center;
     margin: 0px auto;
-    background-color: #FFC353;
+    background-color: #FFFFFF;
     width: 92%;
 }
 
 .profile {
     /* border: 1px solid; */
-    background-color: #FFC353;
+    background-color: #FFFFFF;
     border-radius: 0px;
     width: 92%;
     margin: 0px auto;
@@ -732,3 +738,71 @@ footer .container {
     text-align: justify;
     margin: 5%;
 }
+
+
+/* Belanja */
+.menu .belanja {
+    /* border: 1px solid; */
+    width: 92%;
+    border-radius: 0px;
+    margin: auto;
+    height: 70vw;
+    text-align: center;
+    border-radius: 0 0 100px 0;
+}
+
+.belanja h4 {
+    color: #ff8800;
+    font-size: 2vw;
+    margin: auto;
+    padding: 2vw;
+}
+
+.mid {
+    /* border: 1px solid; */
+    width: 92%;
+    height: auto;
+    margin: 0px auto auto;
+    display: flex;
+}
+
+.mid .box {
+    /* border: 1px solid; */
+    width: 30%;
+    height: 40vw;
+    margin: auto;
+    border-radius: 0px 0px 50px 0px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.box .kotak-gambar {
+    /* border: 1px solid; */
+    width: 100%;
+    /* background: url(img/pisang1.jpg); */
+    height: 24vw;
+    /* background-size: cover; */
+}
+
+.kotak-gambar .gambar1 {
+    background: url(img/pisang1.jpg);
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+}
+.kotak-gambar .gambar2 {
+    background: url(img/pisang2.jpg);
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+}.kotak-gambar .gambar3 {
+    background: url(img/pisang3.jpg);
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+}
+
+.bot {
+    border: 1px solid;
+    height: 10px;
+}
+
