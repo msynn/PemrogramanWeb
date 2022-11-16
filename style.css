@@ -746,9 +746,11 @@ footer .container {
     width: 92%;
     border-radius: 0px;
     margin: auto;
-    height: 70vw;
+    height: 50vw;
     text-align: center;
     border-radius: 0 0 100px 0;
+    margin-bottom: 50px;
+    margin-top: 0px;
 }
 
 .belanja h4 {
@@ -801,8 +803,34 @@ footer .container {
     background-size: cover;
 }
 
-.bot {
-    border: 1px solid;
-    height: 10px;
+.kotak-gambar h3{
+    margin: 0;
+    font-family: "Roboto";
+    font-size: 2.5vw;
+    margin-left: 2vh;
+    color: #565757;
+    text-align: left;
+}
+
+.kotak-gambar h5{
+    margin-top: 0px;
+    margin-bottom: 10px;
+    font-weight: normal;
+    font-family: "Roboto";
+    font-size: 2vw;
+    margin-left: 2vh;
+    color: #565757;
+    text-align: left;
+}
+
+.kotak-gambar h6 {
+    margin-top: 0px;
+    margin-bottom: 10px;
+    font-weight: normal;
+    font-family: "Roboto";
+    font-size: 2vw;
+    margin-left: 2vh;
+    color: #ff8800;
+    text-align: left;
 }
 
