@@ -189,14 +189,50 @@ section h3 {
     bottom: 100px;
 }
 
-.content {
-    margin: auto;
-    margin-top: 0;
+.slidebar {
+    display: flex;
     width: 92%;
-    height: 50vw;
+    margin: auto;
+}
+
+.content {
+    margin-top: 0;
+    margin-right: auto;
+    width: 40%;
+    height: 40vw;
+    border-radius: 10px;
+
     /* border: 1px solid; */;
 }
+
+.slidebar .text1 {
+    margin: auto;
+    /* border: 1px solid; */
+    margin-left: 0;
+    width: 30%;
+    height: 40vw;
+    /* background: url(img/pissang\ shamiya.jpg);
+    background-size: cover; */
+    background-color: #FFC353;
+    border-radius: 0 0 0 200px;
+    margin-bottom: 150px;
+}
+
+.slidebar .text2 {
+    margin: auto;
+    /* border: 1px solid; */
+    margin-right: 0;
+    width: 30%;
+    height: 40vw;
+    /* background: url(img/pissang\ shamiya.jpg);
+    background-size: cover; */
+    background-color: #FFC353;
+    border-radius: 0 0 200px 0;
+    margin-bottom: 150px;
+}
+
 .slider {
+    border-radius: 10px;
     margin: auto;
     width: 100%;
     height: 100%;
@@ -204,7 +240,7 @@ section h3 {
     z-index: -1;
 }
 
-.slide1,.slide2,.slide3 {
+.slide1,.slide2,.slide3,.slide4,.slide5 {
     position: absolute;
     width: 100%;
     margin-left: auto;
@@ -212,42 +248,75 @@ section h3 {
 }
 
 .slide1 {
-    background: url(img/pisang1.jpg) no-repeat center;
+    background: url(img/shamiya1.jpeg) no-repeat center;
     background-size: cover;
-    animation: fade 8s infinite;
-    -webkit-animation: fade 8s infinite;
+    animation: fade 14s infinite;
+    -webkit-animation: fade 14s infinite;
 }
 .slide2 {
-    background: url(img/pisang2.jpg) no-repeat center;
+    background: url(img/shamiya2.jpeg) no-repeat center;
     background-size: cover;
-    animation: fade 8s infinite;
-    -webkit-animation: fade2 8s infinite; 
+    animation: fade 14s infinite;
+    -webkit-animation: fade2 14s infinite; 
 }
 .slide3 {
-    background: url(img/pisang3.jpg) no-repeat center;
+    background: url(img/shamiya3.jpeg) no-repeat center;
     background-size: cover;
-    animation: fade 8s infinite;
-    -webkit-animation: fade3 8s infinite;
+    animation: fade 14s infinite;
+    -webkit-animation: fade3 14s infinite;
+}
+.slide4 {
+    background: url(img/shamiya4.jpeg) no-repeat center;
+    background-size: cover;
+    animation: fade 14s infinite;
+    -webkit-animation: fade4 14s infinite;
+}
+.slide5 {
+    background: url(img/shamiya5.jpeg) no-repeat center;
+    background-size: cover;
+    animation: fade 14s infinite;
+    -webkit-animation: fade5 14s infinite;
 }
 @keyframes fade {
     0%{opacity: 1;}
-    33.333%{opacity: 0;}
-    66.666%{opacity: 0;}
+    20%{opacity: 0;}
+    40%{opacity: 0;}
+    60%{opacity: 0;}
+    80%{opacity: 0;}
     100%{opacity: 1;}
 }
 @keyframes fade2 {
     0%{opacity: 0;}
-    33.333%{opacity: 1;}
-    66.666%{opacity: 0;}
+    20%{opacity: 1;}
+    40%{opacity: 0;}
+    60%{opacity: 0;}
+    80%{opacity: 0;}
     100%{opacity: 0;}
 }
 @keyframes fade3 {
     0%{opacity: 0;}
-    33.333%{opacity: 0;}
-    66.666%{opacity: 1;}
+    20%{opacity: 0;}
+    40%{opacity: 1;}
+    60%{opacity: 0;}
+    80%{opacity: 0;}
     100%{opacity: 0;}
 }
-
+@keyframes fade4 {
+    0%{opacity: 0;}
+    20%{opacity: 0;}
+    40%{opacity: 0;}
+    60%{opacity: 1;}
+    80%{opacity: 0;}
+    100%{opacity: 0;}
+}
+@keyframes fade5 {
+    0%{opacity: 0;}
+    20%{opacity: 0;}
+    40%{opacity: 0;}
+    60%{opacity: 0;}
+    80%{opacity: 1;}
+    100%{opacity: 0;}
+}
 
 /* service */
 .service {
@@ -620,7 +689,7 @@ footer .container {
 }
 
 .profile .foto {
-    background: url(img/pissang\ shamiya.jpg);
+    background: url(img/profile1.jpeg);
     background-size: cover;
     /* border: 1px solid; */
     width: 40%;
@@ -633,7 +702,8 @@ footer .container {
 }
 
 .profile .foto2 {
-    background-color: #FFFFFF;
+    background: url(img/profile2.jpeg);
+    background-size: cover;
     /* border: 1px solid; */
     width: 40%;
     float: right;
