@@ -12,6 +12,7 @@ body {
 
 /* navbar */
 nav {
+    top: 0;
     display: flex;
     background-color: #ffffff;
     justify-content: space-around;
@@ -189,15 +190,16 @@ section h3 {
 }
 
 .content {
+    margin: auto;
     margin-top: 0;
-    width: 100%;
+    width: 92%;
     height: 50vw;
+    /* border: 1px solid; */;
 }
 .slider {
-    background-color: #000000;
     margin: auto;
-    width: 92%;
-    height: 90%;
+    width: 100%;
+    height: 100%;
     position: relative;
     z-index: -1;
 }
@@ -205,7 +207,7 @@ section h3 {
 .slide1,.slide2,.slide3 {
     position: absolute;
     width: 100%;
-    margin: auto;
+    margin-left: auto;
     height: 100%;
 }
 
@@ -219,7 +221,7 @@ section h3 {
     background: url(img/pisang2.jpg) no-repeat center;
     background-size: cover;
     animation: fade 8s infinite;
-    -webkit-animation: fade2 8s infinite;
+    -webkit-animation: fade2 8s infinite; 
 }
 .slide3 {
     background: url(img/pisang3.jpg) no-repeat center;
@@ -383,9 +385,36 @@ section h3 {
 
 }
 
-.banner img {
+.banner {
+    margin: 14vh auto 0px;
+    width: 92%;
+    border-radius: 10px;
+    width: 92%;
+    height: 50vw;
+    position: relative;
+    z-index: -1;
+}
+
+.banner .gambar {
+    background: url(img/banner2.jpeg) center;
+    background-size: cover;
+    border-radius: 10px;
+    position: absolute;
     width: 100%;
     height: 100%;
+    box-shadow: inset  4px 0px 4px rgba(0, 0, 0, 0.25);
+}
+
+.banner .gambar h5 {
+    text-align: center;
+    margin-top: 50%;
+    font-size: 15px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.gambar a {
+    text-decoration: none;
+    color: #FFFFFF;
 }
 
 /* .banner:after {
@@ -436,6 +465,7 @@ section h3 {
     position: absolute;
     width: 100%;
     height: 200px;
+    border-radius: 0;
     z-index: -1;
     background: linear-gradient(180deg, #ff8800 0%, #FFAE12 100%);
     box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -559,3 +589,76 @@ footer .container {
     margin-left: 10%;
 }
 
+/* Profile */
+.text-profile {
+    padding-top: 10vw;
+    color: #FFFFFF;
+    text-align: center;
+    margin: 0px auto;
+    background-color: #FFC353;
+    width: 92%;
+}
+
+.profile {
+    /* border: 1px solid; */
+    background-color: #FFC353;
+    border-radius: 0px;
+    width: 92%;
+    margin: 0px auto;
+    height: auto;
+    flex-direction: column;
+    padding-bottom: 8vw;
+}
+
+.profile .top {
+    /* border: 1px solid; */
+    border-radius: 0px;
+    width: 92%;
+    margin: 0px auto;
+    height: 38vw;
+    display: flex;
+}
+
+.profile .foto {
+    background: url(img/pissang\ shamiya.jpg);
+    background-size: cover;
+    /* border: 1px solid; */
+    width: 40%;
+    height: 28vw;
+    margin-top: 5vw;
+    margin-left: 5vw;
+    margin-right: auto;
+    border-radius: 5px;
+    box-shadow: 0 2px 3px 0 rgba(0,0,0,.1);
+}
+
+.profile .foto2 {
+    background-color: #FFFFFF;
+    /* border: 1px solid; */
+    width: 40%;
+    float: right;
+    height: 28vw;
+    margin-top: 5vw;
+    margin-right: 5vw;
+    border-radius: 5px;
+    box-shadow: 0 2px 3px 0 rgba(0,0,0,.1);
+}
+
+.profile .bot {
+    background-color: #FFFFFF;
+    /* border: 1px solid; */
+    width: 80%;
+    height: auto;
+    margin: auto;
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: 0 2px 3px 0 rgba(0,0,0,.1);
+}
+
+.profile .bot p {
+    font-size:1em;
+    color: rgb(100, 100, 100);
+    word-spacing: 5px;
+    text-align: justify;
+    margin: 5%;
+}
