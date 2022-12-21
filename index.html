@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Monserrat&family=Pacifico&display=swap" rel="stylesheet"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
-
+    <link rel="stylesheet" href="script.js">
 </head>
 <body>
     <!-- Loader -->
@@ -25,10 +25,10 @@
         </div>
 
         <ul class="menu">
-            <li class="active"><a href="#beranda">Beranda</a></li>
+            <li class="active"><a href="#">Beranda</a></li>
             <li><a href="#profile">Profile</a></li>
             <li><a href="#menuFav">Menu</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="contact.html">Contact</a></li>
         </ul>
         <div class="menu-toggle">
             <input type="checkbox">
@@ -38,12 +38,31 @@
         </div>
     </nav>
 
-    <!-- banner -->
-    <section class="banner" id="beranda">
-        <div class="gambar">
-            <a href="#"><h5>www.shamiya.com</h5></a>
+        <!-- img slider -->
+        <div class="containers">
+            <div class="content-slide">
+                <div class="imgslide fade">
+                    <img src="img/pisang1.jpg" alt="">
+                    <div class="location">GIGI HIU</div>
+                    <div class="visit"><a href="https://goo.gl/maps/FGBWSEkNevwtyPhe9">VIEW</a></div>
+                    <div class="text">Istilah 'Gigi Hiu' disematkan sebagai nama pantai ini dikarenakan bebatuan disana tersusun dalam formasi yang menyerupai Gigi Hiu</div>
+                </div>
+                <div class="imgslide fade">
+                    <img src="img/pisang2.jpg" alt="">
+                    <div class="location">ULUN DANU</div>
+                    <div class="visit"><a href="https://goo.gl/maps/KicaPGuvCmdUXCsV8">VIEW</a></div>
+                    <div class="text">Ulun artinya tepi dalam bahasa Indonesia sedangkan Danu berarti danau. Jadi pura Ulun Danu artinya pura yang berada di tepi danau.</div>
+                </div>
+                <div class="imgslide fade">
+                    <img src="img/pisang3.jpg" alt="">
+                    <div class="location">KAWAH IJEN</div>
+                    <div class="visit"><a href="https://goo.gl/maps/cLAUReUKdJEqJJeU6">VIEW</a></div>
+                    <div class="text">Kawah Ijen adalah sebuah danau kawah yang bersifat asam yang berada di puncak Gunung Ijen dengan kedalaman danau 200 meter dan luas kawah mencapai 5.466 Hektar. </div>
+                </div>
+            </div>
+            <a class="prev" onclick="nextslide(-1)">&#10094</a>
+            <a class="next" onclick="nextslide(1)">&#10095</a>
         </div>
-    </section>
 
     <!-- Beranda -->
     <div class="siger">
@@ -153,34 +172,6 @@
     </section> -->
 
     <!-- Contact -->
-    <section class="contact" id="contact">
-        <div class="containercontact">
-        <div class="container">
-            <div class="kotak">
-                <img src="icon/ginay.png" alt="">
-                <ul type="none">
-                    <li>  
-                        <h4>GET IN TOUCH</h4>                    
-                    </li>
-                    <li>
-                        <h5>Phone :<a href="tel://6281356421274">+6281356421274</a></h5>
-                    </li>
-                    <li>
-                        <h5>Email : <a href="mailto:fyanramadhan1@gmail.com">fyanramadhan1@gmail.com</a></h5>
-                    </li>
-                    <li>
-                        <ul type="none">
-                            <li><a href="#"><img src="icon/twitter.png" alt=""></a></li>
-                            <li><a href="https://www.instagram.com/pisanggorengshamiya/?igshid=YmMyMTA2M2Y="><img src="icon/instagram.png" alt=""></a></li>
-                            <li><a href="https://t.me/msynn214"><img src="icon/telegram.png" alt=""></a></li>
-                            <li><a href="https://api.whatsapp.com/send?phone=6282297517356&text=Halo%20Admin%20Saya%20Mau%20Order"><img src="icon/wa.png" alt=""></a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        </div>
-    </section>
 
     <!-- Footer -->
     <footer>

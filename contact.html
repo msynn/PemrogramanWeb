@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fyan Ramadhan</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Monserrat&family=Pacifico&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="script.js">
+</head>
+<body class="menu-contact">
+    <!-- Loader -->
+    <div class="bg-loader">
+        <div class="loader"></div>
+    </div>
+
+    <!-- navbar -->
+    <nav>
+        <div class="logo">
+            <img src="icon/Vector.png" alt="">
+            <h3>SHAMIYA</h3>
+        </div>
+
+        <ul class="menu">
+            <li class="active"><a href="index.html">Beranda</a></li>
+            <li><a href="#profile">Profile</a></li>
+            <li><a href="#menuFav">Menu</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="menu-toggle">
+            <input type="checkbox">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <!-- Contact -->
+    <div class="container-contact">
+
+        <div class="card-container">
+            <div class="left">
+                <div class="left-container">
+                    <h2 class="lg-view">Tentang Kami</h2>
+                    <h2 class="sm-view">Tentang Kami</h2>
+                    <p>Pisang Goreng Shamiya, Menyediakan berbagai macam oleh - oleh Khas Lampung terutama Pisang Goreng.</p>
+                    <br>
+                    <p>Jl. Pagar Alam No.73, Segala Mider, Kec. Tj. Karang Bar., Kota Bandar Lampung, Lampung 35132</p>
+                </div>
+            </div>
+            <div class="right">
+                <div class="right-container">
+                    <form action="">
+                        <h2>Hubungi Kami</h2>
+                        <input type="text" placeholder="Nama">
+                        <input type="text" placeholder="Alamat Email">
+                        <input type="text" placeholder="Phone">
+                        <textarea name="pesan" rows="10" placeholder="Pesan"></textarea>
+                        <button class="button-contact">Kirim</button>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <medium class="copyright">&copy;  2022 Author | Design by Masyan-Project | All rights Reserved. </medium>
+        </div>
+    </footer>
+
+
+
+
+    <script src="script.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $(".bg-loader").hide();
+        })
+    </script>
+
+</body>
+</html>
